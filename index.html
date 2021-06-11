@@ -19,187 +19,77 @@
     </head>
     <body onload="hideform();">
         <center>
-            <h3>FORM</h3>
+            <h3>ENQUIRY FORM</h3>
             <button type="button" id="formshow" class="btn btn-danger" value="Open Form">
-                Open
+                Open Form
             </button>
             <button type="button" id="formhide" class="btn btn-danger" value="hide Form">
-                Close
+                Close Form
             </button>
         </center>
         <div class="container" id="formid">
             <form id="studentform" onsubmit="return submitjs();" name="student_form">
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label for="inputfname">First Name</label>
+                      <label for="inputfname">Name: </label>
                       <input type="text" onblur="blurjs(this);" onfocus="focusjs(this);" class="form-control" id="inputfname" placeholder="Enter name here" required>
                       <p id="spanfirstname"></p>
                       <p id="spanfirstname2"></p>
                     </div>
-                    <div class="form-group col-md-6">
-                      <label for="inputlname">Last Name</label>
-                      <input type="text" onblur="blurjs(this);mylastname();" onfocus="focusjs(this);" class="form-control" id="inputlname" placeholder="Enter Name here">
-                      <p id="spanlastname"></p>
-                    </div>
+                   
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="inputGuardian">Guardian's Name</label>
-                        <input type="text" onblur="blurjs(this);myguardiansname();" onfocus="focusjs(this);" class="form-control" id="inputGuardian" placeholder="Enter Name here" required>
+                        <label for="inputnumber">Number: </label>
+                        <input type="number" onblur="blurjs(this);myguardiansname();" onfocus="focusjs(this);" class="form-control" id="inputnumber" placeholder="Enter Number here" required>
                         <p id="spanguardian"></p>
                 </div>
                 </div>
               
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
+                    <label for="inputEmail4">Email:</label>
                     <input type="email" onblur="blurjs(this);" onfocus="focusjs(this);fillmail();" class="form-control" id="inputEmail4" placeholder="Email">
                   </div>
                 </div>
                 
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="inputnumber">Contact No</label>
-                      <input type="text" onblur="blurjs(this);mycontactnumber();" onfocus="focusjs(this);" class="form-control" id="inputnumber" placeholder="Phone no" required>
-                      <p id="spancontactnumber"></p>
-                    </div>
-                    
-                </div>
-                <div class="form-row">
-                    
-                    <div class="form-group col-md-6">
-                        <label for="inputDOR">Date of Joining</label>
-                        <input type="date" onblur="blurjs(this);" onfocus="focusjs(this);" id="inputDOR">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="inputage">Age:</label>
-                        <input type="text" onblur="blurjs(this);myage();" onfocus="focusjs(this);" id="inputage" class="form-control" placeholder="Age">
-                        <p id="spanage"></p>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputbranch">Branch</label>
-                        <select id="inputbranch" onblur="blurjs(this);" onfocus="focusjs(this);" class="form-control" required>
-                            <option selected>Choose Branch</option>
-                            <option>EIE</option>
-                            <option>ECE</option>
-                            <option>EEE</option>
-                            <option>CSE</option>
-                        </select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputCity">City</label>
-                    <input type="text" onblur="blurjs(this);" onfocus="focusjs(this);" class="form-control" id="inputCity" required>
-                    <p id="spancity"></p>
-                  </div>
+                
+                
+                
+            
                   <div class="form-group ">
-                    <label for="inputState">State</label>
-                    <select id="inputState" onblur="blurjs(this);" onfocus="focusjs(this);" class="form-control" required>
-                      <option selected>Choose State</option>
-                      <option>Andhra Pradesh</option>
-                      <option>Arunachal Pradesh</option>
-                      <option>Assam</option>
-                      <option>Bihar</option>
-                      <option>Chattisgarh</option>
-                      <option>Goa</option>
-                      <option>Gujarat</option>
-                      <option>Haryana</option>
-                      <option>Himachal Pradesh</option>
-                      <option>Jammu and Kashmir</option>
-                      <option>Jharkhand</option>
-                      <option>Karnataka</option>
-                      <option>Kerala</option>
-                      <option>Madhya Pradesh</option>
-                      <option>Maharashtra</option>
-                      <option>Manipur</option>
-                      <option>Meghalaya</option>
-                      <option>Mizoram</option>
-                      <option>Nagaland</option>
-                      <option>Odisha</option>
-                      <option>Punjab</option>
-                      <option>Rajasthan</option>
-                      <option>Sikkim</option>
-                      <option>Tamil Nadu</option>
-                      <option>Telangana</option>
-                      <option>Tripura</option>
-                      <option>Uttar Pradesh</option>
-                      <option>Uttarakhand</option>
-                      <option>West Bengal</option>
-                    </select>
-                  </div>
-                  <div class="form-group ">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" onblur="blurjs(this);" onfocus="focusjs(this);" class="form-control" id="inputZip" required>
+                    <label for="inputEnquiry">Enquiry: </label>
+                    <input type="text" onblur="blurjs(this);" onfocus="focusjs(this);" class="form-control" id="text" required>
                     <span id="spanzipy"></span>
                   </div>
                 
+                
                 <div class="form-group">
-                  <div class="form-group">
-                    <label for="inputgender">Gender : </label><br>
-                    <input type="radio"  id="male" name="gender" value="male">
-                    <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label><br>
-                  </div>
-                  <div class="form-group">
-                      <label for="inputcategory">Category : </label><br>
-                      <input type="radio" id="age1" name="age" value="30">
-                      <label for="age1">General</label><br>
-                      <input type="radio" id="age2" name="age" value="60">
-                      <label for="age2">SC/ST</label><br>
-                      <input type="radio" id="age3" name="age" value="100">
-                      <label for="age3">Others</label><br>
-                  </div>
-                  <div class="form-group">                 
-                    <label for="inputcategory">Facility Requested : </label><br>
-                    <input type="radio" id="fac1" name="bus" value="30">
-                    <label for="fac1">Bus</label><br>
-                    <input type="radio" id="fac2" name="hostel" value="60">
-                    <label for="fac2">Hostel</label> <br>
-                    <input type="radio" id="fac3" name="fees" value="90">
-                    <label for="fac3">Fees</label><br>
-                    <input type="radio" id="fac4" name="canteen" value="120">
-                    <label for="fac4">Canteen</label><br>
-                    <input type="radio" id="fac5" name="transfer" value="150">
-                    <label for="fac5">Transfer</label>  <br>
-                  </div>
+                 
                 </div>
-
-                <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">
-                      Agree to terms and conditions
-                    </label>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-dark">Submit Form</button>
+                <button type="submit" class="btn btn-dark">Submit Enquiry</button>
               </form>  
         </div>
         <style>
             #studentform{
-                padding: 50px 25px 50px 25px;
+                padding: 100px 50px 100px 50px;
             }
 
             body{
-                background-color:rgb(255, 255, 255);
+                background-color:rgb(255, 209, 4);
                 padding-top:70px;
             }
 
             .container{
                 margin-top: 20px;
                 margin-bottom: 20px;
-                background-color:black;
+                background-color:rgb(0, 0, 0);
                 color: cornsilk;
             }
             .jumbotron1{
                 margin:25px;
                 padding:25px;
-                background-color: pink;
+                background-color: orange;
                 font-size: x-large;
                 text-align: center;
             }
@@ -240,7 +130,7 @@
 
             function submitjs()
             {
-                alert("Submit this form?");
+                alert("ENQUIRY SUCCESSFUL!");
                 return true;
             }
 
